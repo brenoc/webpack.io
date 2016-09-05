@@ -1,9 +1,11 @@
 .page {
   position:relative;
   display:flex;
+  flex-direction: row;
+  flex: 1 0 auto;
 
   .sidebar { 
-    flex:0 0 20%; 
+    flex:0 0 20%;
     max-width:20%;
   }
 
@@ -18,9 +20,8 @@
     &:hover { color:map-get($colors, chatham); }
   }
 
-  &-content { 
-    flex:0 0 80%; 
-    max-width:80%;
+  &-content {
+    flex: 1;
     padding:1em;
     background:map-get($colors, white);
   }

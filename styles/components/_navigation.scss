@@ -1,5 +1,4 @@
 .navigation {
-  min-width:map-get($screens, desktop);
   background:map-get($colors, mine-shaft);
   transition:background 250ms;
 
@@ -31,5 +30,11 @@
     background: transparent;
 
     .navigation-nav-link:hover { color:map-get($colors, mine-shaft); }
+  }
+}
+
+@media (max-width:map-get($screens, tablet)) {
+  .navigation-inner {
+    padding-left:3em;
   }
 }

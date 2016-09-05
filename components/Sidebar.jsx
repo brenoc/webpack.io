@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from './Link';
 
-export default props => {
+export default function Sidebar(props) {
   return (
-    <nav className="sidebar">
+    <nav className={`sidebar ${props.isMobile ? 'sidebar-mobile' : ''}`}>
       {
         props.pages.map((page, i) => (
           <div key={ `sidebar-link-${i}` } className="sidebar-link">
@@ -13,4 +13,4 @@ export default props => {
       }
     </nav>
   );
-};
+}

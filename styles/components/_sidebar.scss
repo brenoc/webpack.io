@@ -16,4 +16,20 @@
       &:hover { color:map-get($colors, mine-shaft); }
     }
   }
+
+  &-toggle {
+    position: absolute;
+    top: -2.4em;
+    left: 0.2em;
+    stroke-width: 0;
+  }
+}
+
+.page .sidebar-mobile {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: #eee;
+  z-index: 1;
 }
